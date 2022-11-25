@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 100vh;
+  color: #333;
+  /* background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%); */
+  background-image: url(https://st2.depositphotos.com/5057607/10716/v/450/depositphotos_107161222-stock-illustration-sweet-color-donuts-pattern.jpg);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* LAYOUT */
+main {
+  position: relative;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+.validacion {
+  text-align: center;
+  color: aliceblue;
+  display: block;
+}
+.datos-tarjeta {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+
+.card-descripcion-principal {
+  color: black;
+  position: relative;
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 50px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.card-descripcion {
+  color: green;
+  position: relative;
+  font-size: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 50px;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+}
+.card-data {
+  position: relative;
+  font-size: 2rem;
+  /* text-transform: uppercase; */
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 2rem;
+  margin-left: 4rem;
+  border-radius: 8px;
+  border-color: aliceblue;
+
+  /* background: rgba(11, 166, 101, 0.6); */
+}
+
+.tarjeta-foto {
+  position: relative;
+  font-weight: 100;
+  margin-left: 5rem;
+  margin-top: 5rem;
+  border-radius: 80px;
+  width: 450px;
+  text-align: center;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+
+button {
+  color: #444;
+  left: 50%;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  text-align: end;
+  margin-top: 4rem;
+}
+
+button:hover {
+  background-color: rgba(11, 166, 101, 0.6);
+}
