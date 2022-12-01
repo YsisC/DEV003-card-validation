@@ -16,19 +16,22 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  /* background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%); */
-  background-image: url(https://st2.depositphotos.com/5057607/10716/v/450/depositphotos_107161222-stock-illustration-sweet-color-donuts-pattern.jpg);
+  background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%);
+  /* background-image: linear-gradient(to top left, #b56816 0%, #e9efdd 100%); */
 
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
 }
 
-/* LAYOUT */
-main {
+/* Contenedor de datos de tarjeta */
+.logo {
+  width: 160px;
+}
+.container-0 {
   position: relative;
   width: 100rem;
-  height: 60rem;
+  height: 70rem;
   background-color: rgba(255, 255, 255, 0.35);
   backdrop-filter: blur(200px);
   filter: blur();
@@ -36,15 +39,31 @@ main {
   border-radius: 9px;
   overflow: hidden;
   display: flex;
-}
-.validacion {
   text-align: center;
-  color: aliceblue;
-  display: block;
+  color: black;
 }
-.datos-tarjeta {
+
+/* Contenedor de Validacion de tarjeta */
+.container-1 {
+  display: none;
+  text-align: center;
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  position: inherit;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.card-information {
   flex: 50%;
-  padding: 9rem;
+  padding: 7rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -56,7 +75,7 @@ main {
 .card-descripcion-principal {
   color: black;
   position: relative;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -65,9 +84,9 @@ main {
   margin-top: 2rem;
 }
 .card-descripcion {
-  color: green;
+  color: rgba(0, 0, 0, 0.744);
   position: relative;
-  font-size: 2rem;
+  font-size: 1.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -75,27 +94,37 @@ main {
   margin-left: 4rem;
   margin-top: 1.5rem;
 }
-.card-data {
+.card-descripcion--error {
+  color: red;
   position: relative;
-  font-size: 2rem;
-  /* text-transform: uppercase; */
+  font-size: 0.9rem;
+  text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
-  font-weight: 2rem;
-  margin-left: 4rem;
-  border-radius: 8px;
-  border-color: aliceblue;
+  font-weight: 50px;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.form-input {
+  position: relative;
+  font-size: 2rem;
 
-  /* background: rgba(11, 166, 101, 0.6); */
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 1.5rem;
+  margin-left: 4rem;
+  border-radius: 3px;
+  border-color: rgb(240, 255, 240);
+  height: 3rem;
+  padding: 1px;
 }
 
-.tarjeta-foto {
+.card-foto {
   position: relative;
   font-weight: 100;
-  margin-left: 5rem;
-  margin-top: 5rem;
-  border-radius: 80px;
-  width: 450px;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  width: 400px;
   text-align: center;
 }
 
@@ -119,9 +148,19 @@ button {
   border-radius: 50rem;
   box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
   text-align: end;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 button:hover {
   background-color: rgba(11, 166, 101, 0.6);
+}
+footer {
+  display: block;
+  color: aliceblue;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+a {
+  color: rgb(194, 227, 194);
 }
