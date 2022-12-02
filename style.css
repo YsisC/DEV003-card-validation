@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  /* font-weight: 400; */
+  height: 100vh;
+  color: #333;
+  /* background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%); */
+  /* background-image: url(https://www.xtrafondos.com/wallpapers/vertical/kiut-patron-de-donas-rosquillas-3569.jpg); */
+  background-image: url(https://wallpaperaccess.com/full/1312819.jpg);
+
+  /* background-image: linear-gradient(to top left, #b56816 0%, #e9efdd 100%); */
+  background-color: transparent;
+  backdrop-filter: sepia(10px);
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Contenedor de datos de tarjeta */
+.logo {
+  width: 160px;
+}
+.container-0 {
+  position: relative;
+  width: 100rem;
+  height: 70rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+  text-align: center;
+  color: black;
+}
+
+/* Contenedor de Validacion de tarjeta */
+.container-1 {
+  display: none;
+  text-align: center;
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: 3rem;
+  position: inherit;
+  width: 100rem;
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+}
+
+.card-information {
+  flex: 50%;
+  padding: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+
+.card-descripcion-principal {
+  color: black;
+  position: relative;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 50px;
+  margin-left: 2rem;
+  margin-top: 2rem;
+}
+.card-descripcion {
+  color: rgba(0, 0, 0, 0.744);
+  position: relative;
+  font-size: 1.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 50px;
+  margin-left: 4rem;
+  margin-top: 1.5rem;
+}
+.card-descripcion--error {
+  color: red;
+  position: relative;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 50px;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+.form-input {
+  position: relative;
+  font-size: 2rem;
+
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 1.5rem;
+  margin-left: 4rem;
+  border-radius: 3px;
+  border-color: rgb(240, 255, 240);
+  height: 3rem;
+  padding: 1px;
+}
+
+.card-foto {
+  position: relative;
+  font-weight: 100;
+  margin-top: 0.5rem;
+  border-radius: 10px;
+  width: 400px;
+  text-align: center;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+
+button {
+  color: #444;
+  left: 50%;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+  text-align: end;
+  margin-top: 2rem;
+}
+
+button:hover {
+  background-color: rgba(224, 160, 213, 0.6);
+}
+.resultCard {
+  margin-top: 3rem;
+}
+footer {
+  display: block;
+  color: rgb(19, 20, 21);
+  text-align: center;
+  font-size: 1.2rem;
+}
+a {
+  color: rgb(36, 92, 171);
+}

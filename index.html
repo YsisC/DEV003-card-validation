@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Tarjeta de crédito válida</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header></header>
+    <nav></nav>
+    <main class="container-0" id="mainContainer">
+
+      <section class="card-information">
+        <figure> <img class="logo" src="./imagenes/logo.png"></figure>
+        <h2 class="card-descripcion-principal" >Validacion de tarjeta</h2>
+        <h2 class="card-descripcion" >Numero de Tarjeta</h2>
+        <input  maxlength="19"  placeholder=" ej. 1234 5678 9100" class="form-input" type="text" id="ccNumber" />
+        <h2 class="card-descripcion--error error" id="cardNumberError"></h2>
+        <h2 class="card-descripcion" id="number-0">Valido hasta:</h2>
+        <input type="month" class="form-input" id="ccDate" >
+        <h2 class="card-descripcion" >CCV:</h2>
+        <input placeholder=" ej.  123" type="password"class="form-input" id="ccV"maxlength="3" >
+        <h2 class="card-descripcion" ">Nombre del titular</h2>
+        <input placeholder=" " class="form-input" type="text" id="ccName"  /><br>
+        <div class="form_input-ccName--error error"></div>
+      </section>
+      <section class="card-information">
+
+       <figure> <img class="card-foto" src="./imagenes/tarjetaCredito.jpg"></figure>
+       <br>
+       <br>
+       <button class="check" "> ✔ Comprobar </button>
+     
+      </section>
+     
+ 
+    </main>
+
+   
+    <main class="container-1" id="mainValidator">
+    <figure> <img class="logo" src="./imagenes/logo.png"></figure>
+    <h2 class="resultCard" id="resultCard"></h2>
+    </main>
+    <footer>Proyecto de <a href="https://github.com/Laboratoria/DEV003-card-validation" target="_blank">laboratoria</a>. Creado por <a href="https://github.com/YsisC/DEV003-card-validation" target="_blank">Ysis Longart</a></footer>
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
