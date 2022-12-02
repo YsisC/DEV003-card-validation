@@ -6,16 +6,16 @@ const validator = {
     let evenSum = 0;
 
     // convertirlo en un array y en numero por que arroja un string
-    const numToString = numberCard.toString().split("").map(Number);
+    const numToString = numberCard.toString().split("").map(Number).reverse();
     for (let i = 0; i < numToString.length; i++) {
       //la posicion del index es par
-      if (i % 2 === 0) {
+      if (i % 2 !== 0) {
         //Cuando el resulta da mas de 9
         if (numToString[i] * 2 > 9) {
           evenSum += numToString[i] * 2 - 9;
         } else {
           //Caundo el resultado da 9 o menos
-          evenSum += numToString[i] * 2;
+          evenSum += numToString[i];
         }
       } else {
         //cuando la posicion  del index es impar

@@ -25,7 +25,7 @@ btnCheck.addEventListener("click", function () {
   const ccName = document.getElementById("ccName").value;
   const cardResultParap = document.getElementById("resultCard");
   // if (InputEvent.value === "") {
-  // }
+  // }n
   //El mensaje que arroja si es verdadero o falso
   const message = validator.isValid(numberCard.value)
     ? `${ccName} tu tarjeta de credito ${validator.maskify(
