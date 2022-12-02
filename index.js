@@ -6,7 +6,7 @@ import validator from "./validator.js";
 const numberCard = document.getElementById("ccNumber");
 const errorNumber = document.getElementById("cardNumberError");
 numberCard.addEventListener("input", () => {
-  let regExp = /[A-z]/g;
+  const regExp = /[A-z]/g;
   if (regExp.test(numberCard.value)) {
     errorNumber.textContent = "Error de formato, solo numeros";
     errorNumber.style.color = "red";
@@ -29,11 +29,11 @@ btnCheck.addEventListener("click", function () {
   //El mensaje que arroja si es verdadero o falso
   const message = validator.isValid(numberCard.value)
     ? `${ccName} tu tarjeta de credito ${validator.maskify(
-        numberCard.value
-      )} es valida ☑`
+      numberCard.value
+    )} es valida ☑`
     : `Lo sentimos ${ccName} no es valida tu tarjeta ${validator.maskify(
-        numberCard.value
-      )} ✖`;
+      numberCard.value
+    )} ✖`;
 
   //La respuesta en el documento
   console.log(message);
