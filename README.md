@@ -58,24 +58,29 @@ conceptos también.
 * Implementar control de versiones con git (y la plataforma github)
 
 
-**3. Un README que contiene una definición del producto.**  
+## 3. Un README 
 En el README cuéntanos cómo pensaste en los usuarios y cuál fue tu proceso
 para definir el producto final a nivel de experiencia y de interfaz.  
 Estas preguntas sirven como guía:
 
-* Quiénes son los principales usuarios de producto.**
+* Quiénes son los principales usuarios de producto.
+
 Los principales usuarios son clientes de una pagina de Donas que quieren comprar mediante una tarjeta.
+
 * Cuáles son los objetivos de estos usuarios en relación con tu producto.
-Validar: los usuarios en un 50% desean validar que su tarjeta sea correcta, para comprar algun producto
+
+Validar: los usuarios en un 50% desean validar que su tarjeta sea correcta, para comprar algun producto.
 Comprar: los usuarios en un 25% desean comprar al comprobar la validacion.
-Ocultar: los usuarios en un 25% desean que su datos sean ocultados al ingresar sus datos
+Ocultar: los usuarios en un 25% desean que su datos sean ocultados al ingresar sus datos.
+
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
+
 Algoritmo Luhn: en un 50% mediante el algoritmo se resolvio la validacion
 Check: en 25% mediante un mensaje se valido que el producto es valido o no
 Maskify: en un 25% mediante la funcion se oculto los datos que el usuario no queria mostrar
 
 
-## 5. Objetivos de aprendizaje
+## 4. Objetivos de aprendizaje
 
 Reflexiona y luego marca los objetivos que has llegado a entender y aplicar en tu proyecto. Piensa en eso al decidir tu estrategia de trabajo.
 
