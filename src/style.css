@@ -13,12 +13,16 @@ html {
 
 body {
   font-family: "Nunito", sans-serif;
-  font-weight: 400;
+  /* font-weight: 400; */
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%);
-  /* background-image: linear-gradient(to top left, #b56816 0%, #e9efdd 100%); */
+  /* background-image: linear-gradient(to top left, #1823c6 0%, #8fbf2e 100%); */
+  /* background-image: url(https://www.xtrafondos.com/wallpapers/vertical/kiut-patron-de-donas-rosquillas-3569.jpg); */
+  background-image: url(https://wallpaperaccess.com/full/1312819.jpg);
 
+  /* background-image: linear-gradient(to top left, #b56816 0%, #e9efdd 100%); */
+  background-color: transparent;
+  backdrop-filter: sepia(10px);
   display: grid;
   align-items: center;
   justify-content: center;
@@ -152,15 +156,17 @@ button {
 }
 
 button:hover {
-  background-color: rgba(11, 166, 101, 0.6);
+  background-color: rgba(224, 160, 213, 0.6);
+}
+.resultCard {
+  margin-top: 3rem;
 }
 footer {
   display: block;
-  color: aliceblue;
+  color: rgb(19, 20, 21);
   text-align: center;
-  font-size: 2rem;
-  color: white;
+  font-size: 1.2rem;
 }
 a {
-  color: rgb(194, 227, 194);
+  color: rgb(36, 92, 171);
 }

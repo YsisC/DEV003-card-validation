@@ -2,11 +2,21 @@ import validator from "./validator.js";
 
 // console.log(validator);
 
-//funcion de solo numeros numeros en el numero de tarjeta
+//Elementos del DOM
 const numberCard = document.getElementById("ccNumber");
+const ccName = document.getElementById("ccName").value;
+const btnCheck = document.querySelector(".check");
+
+const inps= document.getElementsByTagName('input');
 const errorNumber = document.getElementById("cardNumberError");
+const cardDataContainer = document.getElementById("mainData");
+const cardResultContainer = document.getElementById("mainResult");
+const cardResultParap = document.getElementById("resultCard");
+
+
+//funcion de solo numeros numeros en el numero de tarjeta
 numberCard.addEventListener("input", () => {
-  let regExp = /[A-z]/g;
+  const regExp = /[A-z]/g;
   if (regExp.test(numberCard.value)) {
     errorNumber.textContent = "Error de formato, solo numeros";
     errorNumber.style.color = "red";
@@ -16,29 +26,40 @@ numberCard.addEventListener("input", () => {
   }
 });
 
+//Funcion ocultar primer containter y mostrar el segundo container
+function ocultar() {
+  cardDataContainer.style.display = "none";
+  cardResultContainer.style.display = "block";
+}
 // chequear que el valor de la tarjeta sea valido o no. Y arroje un mensaje.
-const btnCheck = document.querySelector(".check");
 
 btnCheck.addEventListener("click", function () {
-  const cardResultContainer = document.getElementById("mainValidator");
-  const cardDataContainer = document.getElementById("mainContainer");
-  const ccName = document.getElementById("ccName").value;
 
-  //El mensaje que arroja si es verdadero o falso
-  const message = validator.isValid(numberCard.value)
-    ? `${ccName} tu tarjeta de credito ${numberCard.value} es valida ☑`
-    : `Lo sentimos ${ccName} no es valida tu tarjeta ${numberCard.value} ✖`;
+  // if (InputEvent.value === "") 
+  for (let k = 0; k < inps.length; k++) {
+    if (inps[k].value === ''|| inps[k].value === null) {
+        
+      return alert(`Debe Completar todos los campos `);
+    } 
+    else  {
+      
 
-  //La respuesta en el documento
-  console.log(message);
-  // Ocultar el primer contenedor y mostrar el segundo contenedor con las respuestas
-  function ocultar() {
-    cardDataContainer.style.display = "none";
-    cardResultContainer.style.display = "block";
+      //El mensaje que arroja si es verdadero o falso
+      const message = validator.isValid(numberCard.value)
+        ? `${ccName} tu tarjeta de credito ${validator.maskify(
+          numberCard.value
+        )} es valida ☑`
+        : `Lo sentimos ${ccName} no es valida tu tarjeta ${validator.maskify(
+          numberCard.value
+        )} ✖`;
 
-    // main.classList.toogle("inactivo");
+      //La respuesta en el documento
+      // Ocultar el primer contenedor y mostrar el segundo contenedor con las respuestas
+     
+      ocultar();
+      cardResultParap.textContent = message;
+      // replace();
+    } 
   }
-  ocultar();
-  cardResultContainer.textContent = message;
-  // replace();
-});
+})
+
