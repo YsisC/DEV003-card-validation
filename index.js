@@ -48,3 +48,4 @@ btnCheck.addEventListener("click", function () {
   cardResultParap.textContent = message;
   // replace();
 });
+
