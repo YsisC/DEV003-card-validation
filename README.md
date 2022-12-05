@@ -75,9 +75,9 @@ Ocultar: los usuarios en un 25% desean que su datos sean ocultados al ingresar s
 
 * Cómo crees que el producto que estás creando está resolviendo sus problemas.
 
-Algoritmo Luhn: en un 50% mediante el algoritmo se resolvio la validacion
-Check: en 25% mediante un mensaje se valido que el producto es valido o no
-Maskify: en un 25% mediante la funcion se oculto los datos que el usuario no queria mostrar
+Algoritmo Luhn: en un 50% mediante el algoritmo se resolvio la validacion.
+Check: en 25% mediante un mensaje se valido que el producto es valido o no.
+Maskify: en un 25% mediante la funcion se oculto los datos que el usuario no queria mostrar.
 
 
 ## 4. Objetivos de aprendizaje
