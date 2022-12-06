@@ -22,21 +22,7 @@ const validator = {
           evenSum += (numToString[i]*2);
         }
       }
-      /*
-      if (i % 2 === 0) {
-        //Cuando el resulta da mas de 9
-        if (numToString[i] * 2 > 9) {
-          evenSum += numToString[i] * 2 - 9;
-        } else {
-          //Caundo el resultado da 9 o menos
-          evenSum += numToString[i];
-        }
-      } else {
-        //cuando la posicion  del index es impar
-        oddSum += parseInt(numToString[i]);
-      }
-*/
-
+      
     }
     return (oddSum + evenSum) % 10 === 0;
   },
