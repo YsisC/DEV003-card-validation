@@ -10,11 +10,11 @@ const ccV = document.getElementById("ccV");
 const btnCheck = document.querySelector(".check");
 const btnVolver = document.querySelector(".volver");
 
-const inps= document.querySelectorAll('.form-input');
 const errorNumber = document.getElementById("cardNumberError");
 const cardDataContainer = document.getElementById("mainData");
 const cardResultContainer = document.getElementById("mainResult");
 const cardResultParap = document.getElementById("resultCard");
+// const imgFranquicia = document.querySelector('franquicia'); 
 
 
 //funcion de solo numeros numeros en el numero de tarjeta
@@ -39,8 +39,25 @@ function mostrar() {
   cardResultContainer.style.display = "none";
 }
 
-const continueShow = true;
-continueShow;
+// function getCardType(){
+//   const number1 =numberCard.value;
+//   console.log(number1, typeof number1);
+// let re = new RegExp('^4');
+// if(number1.match(re)!== null) return"visa";
+
+// re = RegExp('^(34||37)');
+// if(number1.match(re)!== null) return "amex";
+
+// re = new RegExp('^5[1-5]');
+// if(number1.match(re)!==null)  return "mastercard";
+
+  
+// re = new RegExp('^6011');
+// if(number1.match(re)!==null)  return "discover";
+
+// re = new RegExp('^9792');
+// if(number1.match(re)!==null)  return "troy"
+// }
 
 // chequear que el valor de la tarjeta sea valido o no. Y arroje un mensaje.
 btnCheck.addEventListener("click", function () {
@@ -51,7 +68,7 @@ btnCheck.addEventListener("click", function () {
     return false
   } 
   else   {
-      
+    
     //El mensaje que arroja si es verdadero o falso
     const message = validator.isValid(numberCard.value)
       ? `${ccName.value} tu tarjeta de credito  ${validator.maskify(
@@ -64,12 +81,14 @@ btnCheck.addEventListener("click", function () {
           
     //La respuesta en el documento
     // Ocultar el primer contenedor y mostrar el segundo contenedor con las respuestas
-     
     ocultar();
     cardResultParap.textContent = message;
-    // replace();
+
+  
     const btnMessage = validator.isValid(numberCard.value)?btnVolver.style.display = 'none':btnVolver.textContent=`Volver a la pagina anterior`;
     btnMessage;
+    
+    // console.log(getCardType());
   } 
 }
 )

@@ -79,14 +79,14 @@ body {
   margin-left: 2rem;
   margin-top: 2rem;
 }
-.card-descripcion {
+label {
   color: rgba(0, 0, 0, 0.744);
   position: relative;
   font-size: 1.9rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
-  font-weight: 50px;
+  font-weight: 500;
   margin-left: 4rem;
   margin-top: 1.5rem;
 }
@@ -125,7 +125,12 @@ body {
   text-align: center;
 }
 
-
+/* .franquicia {
+  width: 160px;
+}
+.hidden {
+  display: none;
+} */
 button {
   color: #444;
   left: 50%;
