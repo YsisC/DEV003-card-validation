@@ -82,7 +82,7 @@ body {
 .card-descripcion {
   color: rgba(0, 0, 0, 0.744);
   position: relative;
-  font-size: 1.9rem;
+  font-size: 1.8rem;
   text-transform: uppercase;
   letter-spacing: 1px;
   word-spacing: 2px;
@@ -105,7 +105,7 @@ body {
 /* formato de los input  */
 .form-input {
   position: relative;
-  font-size: 2rem;
+  font-size: 1.9rem;
   letter-spacing: 1px;
   word-spacing: 2px;
   font-weight: 1.5rem;
@@ -125,7 +125,12 @@ body {
   text-align: center;
 }
 
-
+/* .franquicia {
+  width: 160px;
+}
+.hidden {
+  display: none;
+} */
 button {
   color: #444;
   left: 50%;
